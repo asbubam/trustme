@@ -32,7 +32,7 @@ clean:
 	rm -rf ./bin/${FILE}
 
 .PHONY: help # print whole command of Makefile
- help:
+help:
 	@grep -E '^\.PHONY: .+ .*?# .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = "(: |#)"}; {printf "%-30s %s\n", $$2, $$3}'
 
 .PHONY: test # run unit tests
