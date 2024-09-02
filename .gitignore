@@ -5,5 +5,7 @@
 
 *.swp
 
+oryxBuildBinary
+
 build/
 bin/
