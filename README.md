@@ -14,6 +14,17 @@ $ trustme version
 ```
 
 ## Run TrustMe
+* Check your current IAM identity.
+```shell
+$ trustme whoami
+```
+
+* Assume IAM Role
+```shell
+$ trustme assume --role-name {RoleName}
+```
+
+## Next functions will be included.
 * Check current Trust Relationship of IAM Role
 ```shell
 $ trustme tr check --role-name={RoleName}
@@ -24,19 +35,9 @@ $ trustme tr check --role-name={RoleName}
 $ trustme policy check --role-name={RoleName}
 ```
 
-* Check your IAM identity.
-```shell
-$ trustme whoami
-```
-
 * Add your identity to Trust Relationship.
 ```shell
 $ trustme tr add --role-name {RoleName}
-```
-
-* Assume Role
-```shell
-$ trustme assume --role-name {RoleName}
 ```
 
 * Remove your identity from Trust Relationship.
